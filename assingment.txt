@@ -1,0 +1,44 @@
+import org.openqa.selenium.Alert;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+public class Assingment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://github.com/");
+		driver.findElement(By.cssSelector("input[type='text']")).click();
+		driver.findElement(By.cssSelector("input[type='text']")).sendKeys("react",Keys.ENTER);
+		driver.findElement(By.linkText("Advanced search")).click();
+		driver.findElement(By.id("search_language")).click();
+		driver.findElement(By.id("search_language")).sendKeys("j");
+		driver.findElement(By.id("search_language")).sendKeys("j");
+		driver.findElement(By.id("search_stars")).click();
+		driver.findElement(By.id("search_stars")).sendKeys(">45");
+		driver.findElement(By.id("search_followers")).click();
+		driver.findElement(By.id("search_followers")).sendKeys(">50");
+		driver.findElement(By.id("search_license")).click();
+		driver.findElement(By.id("search_license")).sendKeys("b");
+		driver.findElement(By.id("search_license")).sendKeys("b");
+		driver.findElement(By.id("search_license")).sendKeys("b");
+		driver.findElement(By.id("search_license")).sendKeys("b");
+		driver.findElement(By.id("search_license")).sendKeys("b");
+		driver.findElement(By.id("search_license")).sendKeys("b",Keys.ENTER);
+		driver.findElement(By.cssSelector("button[type='submit']")).click();
+		driver.findElement(By.linkText("mvoloskov/decider")).click();
+		driver.findElement(By.linkText("README.md")).click();
+		
+		
+		
+		
+	}
+
+}
